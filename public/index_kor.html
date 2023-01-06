@@ -5,47 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chanhee Kim | Portfolio</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="sketchstyle.css"/>
     <script src="script.js"></script>
     <link rel="icon" href="./assets/images/favicon.png"/>
 </head>
 <body>
     <header class="navbar">
-        <div class="logo">
+        <a href="#section_1"><div class="logo">
             CHANHEE KIM
         </div>
+        </a>
         <div class="menu">
-            <div id="menu_home" class="menu-content" onClick="selectNav('menu_home')">
+            <ul class="main-menu">
+                <li id="menu_home" class="menu-content" onClick="selectNav('menu_home')">
                 <a href="#section_1">HOME</a>
-            </div>
-            <div id="menu_project" class="menu-content" onClick="selectNav('menu_project')">
-                <a href="#section_3">PROJECT</a>
-            </div>
-            <div id="menu_involvement" class="menu-content" onClick="selectNav('menu_involvement')">
+               </li>
+               <li id="menu_project" class="menu-content" onClick="selectNav('menu_project')">
+                 <a href="#section_3">PROJECT</a>
+            </li>
+            <li id="menu_involvement" class="menu-content" onClick="selectNav('menu_involvement')">
                 <a href="#section_4">INVOLVEMENT</a>
-            </div>
-            <div id="menu_resume" class="menu-content" onClick="selectNav('menu_resume')">
-                <a href="assets/files/Chanhee_Resume.pdf" target="_blank">RESUME</a>
-            </div>
+             </li>
+            <li id="menu_resume" class="menu-content" onClick="selectNav('menu_resume')">
+                  <a href="assets/files/Chanhee_Resume.pdf" target="_blank">RESUME</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">한글 이력서</a></li>
+                        <li><a href="#">영어 이력서</a></li>
+                 </ul>
+             </li>
+            <div id="blank"></div>
             <div id="menu_language" class="menu-content">
-                <a href="index_kor.html">
-                    <div class="lang_kor lang_selected">
-                    KOR
-                    </div>
-                </a>
-                <div class="lang_div"> | </div>
-                <a href="index_eng.html">
-                    <div class="lang_eng">
-                    ENG
-                    </div>
-                </a>
+                <li class="lang_kor lang_selected">
+                    <a href="index_kor.html">KOR</a>
+                </li>
+                <span class="lang_div"> | </span>
+                <li class="lang_eng">
+                    <a href="index_eng.html">ENG</a>
+                </li>
             </div>
             <div class="language_selector">
                 <a href="index_eng.html">
-                    <div> LANG
+                    <div> ENG
                     </div>
                 </a>
             </div>
+            </ul>
         </div>
     </header>
     <div class="layout">
@@ -157,7 +161,7 @@
                             </div>
                             <div id="portdesc3" class="port_desc">
                              <div id="desctitle3" class="desc_title">
-                                아제르바이잔 ICT 인프라<br>구축
+                                아제르바이잔 ICT<br>인프라 구축
                                 </div>
                               <div id="descdetail" class="desc_detail">
                                 UN의 지속가능발전목표 9번을 모델로 삼은, 아제르바이잔을 위한 ICT 로드맵 및 인프라. 전기 기반의 교통수단. 효율적인 자원 사용과 스마트 팜 계획 구축.
@@ -180,7 +184,7 @@
                              <div id="desctitle4" class="desc_title">
                                 소셜 프로젝트_UnderDream
                                 </div>
-                              <div id="descdetail4" class="desc_detail">
+                              <div id="descdetail" class="desc_detail">
                                 사회적인 사각지대에 놓인 소외계층 아이들에게 삶의 활력을 주어 사회에 긍정적인 영향력을 전달하기 위한 목표를 가진 스타트업팀.
                             </div>
                             </div>
@@ -199,7 +203,7 @@
         <div class="outer-layout_4">
             <div class="layout_4">
                 <div class="page_involvement">
-                    Campus<br>Involvement
+                    Campus<br>Involvements
                 </div>
                 <div class="inv_layout">
                     <div class="inv_history_front">
