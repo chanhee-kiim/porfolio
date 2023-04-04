@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-ul, li {
+ul li {
     list-style: none;
 }
 
@@ -11,11 +11,6 @@ a {
     color: inherit;
 }
 
-/* .menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-} */
 .main-menu{
     display: flex;
     align-items: center;
@@ -24,31 +19,33 @@ a {
 .menu-content{
     display: flex;
     width: fit-content;
+    position: relative;
     align-items: center;
-    padding: 12px 10px;
+    justify-content: center;
+    margin: 12px 10px;
     font-size: 14px;
     color: rgb(53, 50, 50);
     letter-spacing: 1px;
     line-height: 20px;
-    border-radius: 8px;
-    border: 0;
     cursor: pointer;
-    background-color: transparent;
     text-decoration: none;
     text-align: left;
 }
 
-/* .menu-content{
-    display: flex;
-    width: fit-content;
-    font-size: 14px;
-    margin: 12px;
-    color: rgb(53, 50, 50);
-    letter-spacing: 0.8px;
-} */
-
-.sub-menu {
-    display: none;
+#sub-menu{
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+    top: 30px;
+    padding: 12px 22px 12px 22px;
+    background-color: rgb(243, 243, 243);
+    border-radius: 17px;
+    white-space: nowrap;
+    z-index: 1;
+}
+li:hover ul#sub-menu{
+    opacity: 1;
+    visibility: visible;
 }
 
 
@@ -134,6 +131,7 @@ width: 1200px;
         font-size: 33px;
     }
 }
+
 .navbar{
  display: flex;
  justify-content: right;
@@ -237,11 +235,23 @@ width: 1200px;
     /* margin-left: 40px; */
     margin-top: 35px;
 }
+.title-detail strong {
+    font-weight: 600;
+    background-image: linear-gradient(90deg,#f56772 0%,#ba6bff 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
 .title-detail_kor{
     font-size: 35px;
     font-weight: 700;
     /* margin-left: 40px; */
     margin-top: 35px;
+}
+.title-detail_kor strong{
+    font-weight: 600;
+    background-image: linear-gradient(90deg,#f56772 0%,#ba6bff 100%);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 @media(max-width: 1000px){
     .title-detail{

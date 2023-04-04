@@ -5,9 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chanhee Kim | Portfolio</title>
-    <link rel="stylesheet" href="sketchstyle.css"/>
+    <link rel="stylesheet" href="style.css"/>
     <script src="script.js"></script>
     <link rel="icon" href="./assets/images/favicon.png"/>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyDPbN-R4hs2GnHNXkwUuRaT21y3x_xQiug",
+          authDomain: "chanhee-kim.firebaseapp.com",
+          projectId: "chanhee-kim",
+          storageBucket: "chanhee-kim.appspot.com",
+          messagingSenderId: "735230903322",
+          appId: "1:735230903322:web:8029faf78843d6dc2e7da3",
+          measurementId: "G-W6TS43PYC3"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 </head>
 <body>
     <header class="navbar">
@@ -26,14 +49,14 @@
             <li id="menu_involvement" class="menu-content" onClick="selectNav('menu_involvement')">
                 <a href="#section_4">INVOLVEMENT</a>
              </li>
-            <li id="menu_resume" class="menu-content" onClick="selectNav('menu_resume')">
-                  <a href="assets/files/Chanhee_Resume.pdf" target="_blank">RESUME</a>
-                    <ul class="sub-menu">
-                        <li><a href="#">한글 이력서</a></li>
-                        <li><a href="#">영어 이력서</a></li>
-                 </ul>
-             </li>
-            <div id="blank"></div>
+             <li id="menu_resume" class="menu-content" onClick="selectNav('menu_resume')">
+                <a href="assets/files/Chanhee_Resume.pdf" target="_blank">RESUME</a>
+                <!-- <ul class="sub-menu">
+                  <li><a href="#">한글 이력서</a></li>
+                  <li><a href="#">영어 이력서</a></li>
+                </ul> -->
+            </li>
+            <span id="blank"></span>
             <div id="menu_language" class="menu-content">
                 <li class="lang_kor lang_selected">
                     <a href="index_kor.html">KOR</a>
@@ -67,7 +90,7 @@
         <div class="main-plot">
             <div class="title-detail_kor">
                 저는 김찬희입니다<br>
-                (전) 경영지원팀 & AI 컨설턴트이지요
+                <strong>경험</strong>을 기획하는 CX/UX 기획자이지요
                 <br><br>
                 이곳에 오신 걸 너무나도 환영합니다!
             </div>
@@ -91,7 +114,7 @@
                             찬희에 대하여
                         </div>
                     <div class="profile_description_detail_kor_2">
-                        학사: 한국뉴욕주립대학교
+                        학사: 스토니브룩대학교
                         <br> 전공: 기술경영학과
                         <br> 부전공: 공학기술기업학과
                     </div>
@@ -220,7 +243,7 @@
                                     08.2022 - 12.2022
                                 </div>
                                 <div class="his_b_detail_kor">
-                                    부회장 및 임원<br>스토니브룩대학교 Sanger Hall 의회
+                                    부회장 및 임원<br>스토니브룩대학교 Sanger Hall Council
                                 </div>
                             </div>
                         </div>
@@ -274,7 +297,7 @@
                                     08.2022 - 12.2022
                                 </div>
                                 <div class="his_b_detail_kor">
-                                    부회장 및 임원<br>📍스토니브룩대학교<br>Sanger Hall 의회
+                                    부회장 및 임원<br>📍스토니브룩대학교<br>Sanger Hall Council
                                 </div>
                             </div>
                         </div>

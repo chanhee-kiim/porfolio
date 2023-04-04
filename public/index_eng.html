@@ -8,6 +8,29 @@
     <link rel="stylesheet" href="style.css"/>
     <script src="script.js"></script>
     <link rel="icon" href="./assets/images/favicon.png"/>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyDPbN-R4hs2GnHNXkwUuRaT21y3x_xQiug",
+          authDomain: "chanhee-kim.firebaseapp.com",
+          projectId: "chanhee-kim",
+          storageBucket: "chanhee-kim.appspot.com",
+          messagingSenderId: "735230903322",
+          appId: "1:735230903322:web:8029faf78843d6dc2e7da3",
+          measurementId: "G-W6TS43PYC3"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 </head>
 <body>
     <header class="navbar">
@@ -16,31 +39,32 @@
         </div>
         </a>
         <div class="menu">
-            <div id="menu_home" class="menu-content" onClick="selectNav('menu_home')">
+            <ul class="main-menu">
+                <li id="menu_home" class="menu-content" onClick="selectNav('menu_home')">
                 <a href="#section_1">HOME</a>
-            </div>
-            <div id="menu_project" class="menu-content" onClick="selectNav('menu_project')">
-                <a href="#section_3">PROJECT</a>
-            </div>
-            <div id="menu_involvement" class="menu-content" onClick="selectNav('menu_involvement')">
+               </li>
+               <li id="menu_project" class="menu-content" onClick="selectNav('menu_project')">
+                 <a href="#section_3">PROJECT</a>
+            </li>
+            <li id="menu_involvement" class="menu-content" onClick="selectNav('menu_involvement')">
                 <a href="#section_4">INVOLVEMENT</a>
-            </div>
-            <div id="menu_resume" class="menu-content" onClick="selectNav('menu_resume')">
-                <a href="assets/files/Chanhee_Resume.pdf" target="_blank">RESUME</a>
-            </div>
-            <div id="blank"></div>
+             </li>
+            <li id="menu_resume" class="menu-content" onClick="selectNav('menu_resume')">
+                  <a href="assets/files/Chanhee_Resume.pdf" target="_blank">RESUME</a>
+                    <!-- <ul class="sub-menu">
+                        <li><a href="#">한글 이력서</a></li>
+                        <li><a href="#">영어 이력서</a></li>
+                 </ul> -->
+             </li>
+            <span id="blank"></span>
             <div id="menu_language" class="menu-content">
-                <a href="index_kor.html">
-                    <div class="lang_kor">
-                    KOR
-                    </div>
-                </a>
-                <div class="lang_div"> | </div>
-                <a href="index_eng.html">
-                    <div class="lang_eng lang_selected">
-                    ENG
-                    </div>
-                </a>
+                <li class="lang_kor">
+                    <a href="index_kor.html">KOR</a>
+                </li>
+                <span class="lang_div"> | </span>
+                <li class="lang_eng lang_selected">
+                    <a href="index_eng.html">ENG</a>
+                </li>
             </div>
             <div class="language_selector">
                 <a href="index_kor.html">
@@ -48,6 +72,7 @@
                     </div>
                 </a>
             </div>
+            </ul>
         </div>
     </header>
     <div class="layout">
@@ -65,9 +90,9 @@
         <div class="main-plot">
             <div class="title-detail">
                 I'm Chanhee Kim<br>
-                Former Operations Manager & AI Consultant.
+                A CX/UX Planner, planning <strong>EXPERIENCE.</strong>
                 <br><br>
-                You are so welcomed here.
+                You are so welcomed here!
             </div>
             <!-- <button class="view-button">
                 VIEW MY WORK
@@ -89,7 +114,7 @@
                             This is me
                         </div>
                     <div class="profile_description_detail_2">
-                        B.S. at State University of New York, Korea - Stony Brook University
+                        B.S. at Stony Brook University
                         <br> Major: Technological Systems Management
                         <br>Minor: Engineering and Technology Entrepreneurship
                     </div>
@@ -104,7 +129,7 @@
                             This is me
                         </div>
                     <div class="profile_description_detail_engmob_2">
-                        B.S. at SUNY Korea - Stony Brook University
+                        B.S. at Stony Brook University
                         <p>Major: Technological Systems Management</p>
                         <p>Minor: Engineering and Technology Entrepreneurship</p>
                     </div>
@@ -256,7 +281,7 @@
                                 02.2021 - 11.2021
                             </div>
                             <div class="his_b_detail">
-                                Resident Assistant in SUNY Korea <br><br>
+                                Resident Assistant in<br>SUNY Korea <br><br>
                             </div>
                         </div>
                         </div>

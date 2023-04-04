@@ -14,6 +14,7 @@ let a = 0 // hoisting 불가능
 var b = 0 // hoisting이 가능
 const c = 0 // 한번 할당한 값 변경 X
 
+
 const selectNav = (id) => {
 
     const menuContents = document.getElementsByClassName("menu-content")
@@ -24,5 +25,4 @@ const selectNav = (id) => {
     }
 
     document.getElementById(id).classList.add("select")
-
 }
