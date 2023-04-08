@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+ul{
+    list-style: none;
+    background: #22438C;
+}
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+}
+ul li ul.sub-menu li{
+    display: block;
+}
+ul li ul.sub-menu{
+    width: 100%;
+    background: #22438C;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li a:hover{
+    background: #112C66;
+}
+ul li:hover ul.sub-menu{
+    display: block;
+}
+
+</style>
+<body>
+    <div class="menu">
+        <ul class="main-menu">
+            <li id="menu_home" class="menu-content" onClick="selectNav('menu_home')">
+            <a href="#section_1">HOME</a>
+           </li>
+           <li id="menu_project" class="menu-content" onClick="selectNav('menu_project')">
+             <a href="#section_3">PROJECT</a>
+        </li>
+        <li id="menu_involvement" class="menu-content" onClick="selectNav('menu_involvement')">
+            <a href="#section_4">INVOLVEMENT</a>
+         </li>
+        <li id="menu_resume" class="menu-content" onClick="selectNav('menu_resume')">
+              <a href="assets/files/Chanhee_Resume.pdf" target="_blank">RESUME</a>
+                <ul class="sub-menu">
+                    <li><a href="#">한글 이력서</a></li>
+                    <li><a href="#">영어 이력서</a></li>
+             </ul>
+         </li>
+        <span id="blank"></span>
+        <div id="menu_language" class="menu-content">
+            <li class="lang_kor">
+                <a href="index_kor.html">KOR</a>
+            </li>
+            <span class="lang_div"> | </span>
+            <li class="lang_eng lang_selected">
+                <a href="index_eng.html">ENG</a>
+            </li>
+        </div>
+        <div class="language_selector">
+            <a href="index_kor.html">
+                <div> 한글
+                </div>
+            </a>
+        </div>
+        </ul>
+    </div>
+</body>
+</html>
+
+
+

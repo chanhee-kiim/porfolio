@@ -8,7 +8,7 @@
     ],
     "rewrites": [{
       "source": "**",
-      "destination": "/index_eng.html"
+      "destination": "/index_kor.html"
     }]
   }
 }
